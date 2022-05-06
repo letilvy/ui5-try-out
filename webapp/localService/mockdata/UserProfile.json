@@ -1,0 +1,31 @@
+{
+	"role": [
+		"On Premise",
+		"SAP Enterprise Cloud Services",
+		"Support Partner",
+		"SuccessFactors & Multiposting",
+		"SAP Business Technology Platform (former SAP Cloud Platform)",
+		"C/4HANA (Hybris)"
+	],
+
+	"product": [
+		"SAP Crystal Reports 2013",
+		"SAP HANA, platform edition 2.0",
+		"SAP ERP 6.0",
+		"Hybris Commerce Suite 4.5",
+		"SAP NetWeaver Master Data Management 7.1",
+		"SAP NetWeaver 7.4",
+		"SAP Adaptive Server Enterprise 16.1"
+	],
+
+	"system": [
+		"Solution Manager for Partners",
+		"ST-CONT 710 Test System",
+		"SAPSA Demo System",
+		"RD02 PROD",
+		"Process Integration (XI)",
+		"SAP Event Ticketing System",
+		"CA12552195TID000000000740407221",
+		"SAP Cloud ALM"
+	]
+}

@@ -1,0 +1,114 @@
+{
+	"openSAP": [{
+		"Score": "9.7",
+		"Title": "Chatbot Building with SAP Conversational AI Track (2022 Edition)",
+		"Description": "<p>Earn a Chatbot Building with SAP Conversational AI certificate by joining this free online curriculum. </p>\n\n<p>We've put together this track to bundle essential courses teaching chatbot building with SAP Conversational AI. </p>\n\n<p><strong>This track is not compatible with the mobile apps</strong>. To view this track on a mobile device, we recommend that you log in with a browser. </p>\n",
+		"StartDate": "2022-03-29T09:00:00Z",
+		"EndDate": "2022-10-31T09:00:00Z",
+		"Image": "image/openSAPCourse1.jpg",
+		"Url": "https://open.sap.com/courses/caic1-tr",
+		"Languages": [
+			"en"
+		],
+		"LearningObjectives": [
+			"Chatbot Building with SAP Conversational AI Track"
+		]
+	},{
+		"Score": "9.3",
+		"Title": "SAP Business ByDesign Administration",
+		"Description": "<p>Join this free online course to learn how to manage SAP Business ByDesign, including setting up an organizational structure, extending the solution, and importing or exporting data from SAP Business ByDesign.</p>\n",
+		"StartDate": "2021-09-06T09:00:00Z",
+		"EndDate": "2021-10-19T09:00:00Z",
+		"Image": "image/openSAPCourse2.jpg",
+		"Url": "https://open.sap.com/courses/byd9",
+		"Languages": [
+			"en"
+		],
+		"LearningObjectives": [
+			"Organizational, Access, and Task Management",
+			"Migration, Input, and Output",
+			"Business Flexibility",
+			"Data Protection and Privacy",
+			"Information Management"
+		]
+	},{
+		"Score": "8.9",
+		"Title": "Fundamentals of Red Hat Enterprise Linux for SAP Solutions",
+		"Description": "<p>Join this free online course to learn the basics of Red Hat Enterprise Linux for SAP Solutions and how to perform practical system administration tasks.</p>\n",
+		"StartDate": "2022-04-13T09:00:00Z",
+		"EndDate": "2022-05-12T09:00:00Z",
+		"Image": "image/openSAPCourse3.jpg",
+		"Url": "https://open.sap.com/courses/red2-pc",
+		"Languages": [
+			"en"
+		],
+		"LearningObjectives": [
+			"Running Linux Commands",
+			"Users, Files, and Permissions",
+			"Networking, Software, and Storage"
+		]
+	},{
+		"Score": "7.8",
+		"Title": "DevOps for ABAP with gCTS in SAP S/4HANA",
+		"Description": "<p>Join this free online course to learn about the Git-enabled Change and Transport System (gCTS) and how you can leverage it to set up DevOps for SAP S/4HANA ABAP development processes.</p>\n",
+		"StartDate": "2022-03-07T09:00:00Z",
+		"EndDate": "2022-04-19T09:00:00Z",
+		"Image": "image/openSAPCourse4.jpg",
+		"Url": "https://open.sap.com/courses/gcts1",
+		"Languages": [
+			"en"
+		],
+		"LearningObjectives": [
+			"gCTS Basics and Preparation",
+			"Use gCTS Basics",
+			"Leverage Git Capabilities in ABAP",
+			"Tailor gCTS to Your Needs",
+			"gCTS in CI/CD Processes"
+		]
+	},{
+		"Score": "7.3",
+		"Title": "Intelligent Spend Management Using SAP Concur (Repeat)",
+		"Description": "<p>Join this free online course to learn how you can simplify, automate, and streamline spend management processes with SAP Concur.</p>\n",
+		"StartDate": "2022-05-03T09:00:00Z",
+		"EndDate": "2022-06-08T09:00:00Z",
+		"Image": "image/openSAPCourse5.jpg",
+		"Url": "https://open.sap.com/courses/concur1-1",
+		"Languages": [
+			"en"
+		],
+		"LearningObjectives": [
+			"Manage Spend Before It Happens",
+			"Capture Spend as It Happens",
+			"Capture Spend Using Expense",
+			"Process Spend After It Happens"
+		]
+	},{
+		"Score": "6.6",
+		"Title": "Human Experience Management (HXM) - The Next Phase of HR",
+		"Description": "<p>Join this free online course to learn what Human Experience Management (HXM) is and how HXM technology is enabling HR to create more agile, adaptive, and successful companies.</p>\n",
+		"StartDate": "2022-10-13T09:00:00Z",
+		"EndDate": "2022-11-18T09:00:00Z",
+		"Image": "image/openSAPCourse6.jpg",
+		"Url": "https://open.sap.com/courses/sfintro2",
+		"Languages": [
+			"en"
+		],
+		"LearningObjectives": [
+			"The Core Elements of HXM",
+			"Shaping & Managing Employee Experience",
+			"Strategic Applications of HXM"
+		]
+	}],
+
+	"successStory": [
+		
+	],
+
+	"sapCommunity": [
+		
+	],
+
+	"kba": [
+		
+	]
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="image/fiori-logo.ico"/>
+	<title>UI5 Try Out</title>
+
+	<style>
+		.sapMPanelContent{
+			padding: 0 !important;
+		}
+
+		.sapMSlt{
+			border-radius: 0.75rem !important;
+		}
+	</style>
+	<script id="sap-ui-bootstrap"
+			src="../../resources/sap-ui-core.js"
+			data-sap-ui-theme="sap_fiori_3"
+			data-sap-ui-resourceroots='{
+				"sap.ui5.tryout": "./"
+			}'
+			data-sap-ui-oninit="module:sap/ui/core/ComponentSupport"
+			data-sap-ui-compatVersion="edge"
+			data-sap-ui-async="true"
+			data-sap-ui-frameOptions="trusted">
+	</script>
+
+</head>
+<body class="sapUiBody">
+	<div data-sap-ui-component
+		data-name="sap.ui5.tryout"
+		data-id="container"
+		data-settings='{"id" : "recommend"}'>
+	</div>
+</body>
+</html>

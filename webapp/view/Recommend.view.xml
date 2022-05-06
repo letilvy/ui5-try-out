@@ -1,0 +1,171 @@
+<mvc:View
+	controllerName="sap.ui5.tryout.controller.Recommend"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:core="sap.ui.core"
+	xmlns:l="sap.ui.layout"
+	xmlns:f="sap.ui.layout.form">
+	<l:FixFlex class="fixFlexVertical">
+		<l:fixContent>
+			<IconTabHeader>
+				<items>
+					<IconTabFilter key="opensap" text="openSAP Course"/>
+					<IconTabFilter key="successstory" text="Customer Success Story"/>
+					<IconTabFilter key="sapcommunity" text="SAP Community"/>
+					<IconTabFilter key="kba" text="Knowledge Base Article"/>
+				</items>
+			</IconTabHeader>
+			<Panel headerText="Algorithm"
+				expanded="true"
+				expandable="true">
+				<headerToolbar>
+					<OverflowToolbar>
+						<Title text="Algorithm"/>
+						<ToolbarSpacer/>
+						<Select>
+							<layoutData>
+								<OverflowToolbarLayoutData priority="NeverOverflow"/>
+							</layoutData>
+							<items>
+								<core:Item key="a1" text="Classification and Class Probability Estimation"/>
+								<core:Item key="a2" text="Regression (Value Estimation)"/>
+								<core:Item key="a3" text="Similarity Matching"/>
+								<core:Item key="a4" text="Clustering"/>
+								<core:Item key="a5" text="Co-occurrence Grouping"/>
+								<core:Item key="a6" text="Profiling (Behavior Description)"/>
+								<core:Item key="a7" text="Link Prediction"/>
+								<core:Item key="a8" text="Causal Modeling"/>
+							</items>
+						</Select>
+					</OverflowToolbar>
+				</headerToolbar>
+				<content>
+					<HBox class="sapUiSmallMarginTopBottom sapUiLargeMarginBeginEnd"
+						alignItems="Center"
+						justifyContent="SpaceBetween">
+						<VBox>
+							<HBox alignItems="Center" justifyContent="Center">
+								<Label text="Parameter 1:"/>
+								<Input value="99" class="sapUiTinyMarginBegin"/>
+							</HBox>
+							<HBox alignItems="Center" justifyContent="Center">
+								<Label text="Parameter 2:"/>
+								<Input value="123" class="sapUiTinyMarginBegin"/>
+							</HBox>
+						</VBox>
+						<VBox
+							alignItems="Start"
+							justifyContent="Center">
+							<Label text="Parameter 3:"/>
+							<RadioButtonGroup id="rbg3" columns="5">
+								<RadioButton id="rb3-1" text="Option 1"/>
+								<RadioButton id="rb3-2" text="Option 2"/>
+								<RadioButton id="rb3-3" text="Option 3"/>
+							</RadioButtonGroup>
+						</VBox>
+						<VBox
+							alignItems="Start"
+							justifyContent="Center">
+							<Label text="Parameter 4:"/>
+							<Slider min="0" max="100" value="57"
+								enableTickmarks="true" 
+								class="sapUiSmallMarginBottom" 
+								width="100%">
+								<ResponsiveScale tickmarksBetweenLabels="3"/>
+							</Slider>
+						</VBox>
+					</HBox>
+				</content>
+			</Panel>
+		</l:fixContent>
+		<l:flexContent>
+			<l:Splitter
+				id="mainSplitter"
+				width="100%">
+				<l:VerticalLayout width="100%">
+					<l:layoutData>
+						<l:SplitterLayoutData size="40%" />
+					</l:layoutData>
+					<l:content>
+						<OverflowToolbar>
+							<ToolbarSpacer/>
+							<Title text="User Data" level="H3"/>
+							<ToolbarSpacer/>
+						</OverflowToolbar>
+						<Title text="Roles:"
+							class="sapUiSmallMarginTop sapUiSmallMarginBegin"/>
+						<l:VerticalLayout
+							content="{ 
+								path: 'profile>/role', 
+								factory: '.showUserProfile'
+							}"
+							class="sapUiContentPadding sapUiSmallMarginBegin"
+							width="100%"/>
+						<Title text="Products:"
+							class="sapUiSmallMarginTop sapUiSmallMarginBegin"/>
+						<l:VerticalLayout
+							content="{ 
+								path: 'profile>/product', 
+								factory: '.showUserProfile'
+							}"
+							class="sapUiContentPadding sapUiSmallMarginBegin"
+							width="100%"/>
+						<Title text="Systems:"
+							class="sapUiSmallMarginTop sapUiSmallMarginBegin"/>
+						<l:VerticalLayout
+							content="{ 
+								path: 'profile>/system', 
+								factory: '.showUserProfile'
+							}"
+							class="sapUiContentPadding sapUiSmallMarginBegin"
+							width="100%"/>
+					</l:content>
+				</l:VerticalLayout>
+				<l:VerticalLayout width="100%">
+					<l:layoutData>
+						<l:SplitterLayoutData size="60%" />
+					</l:layoutData>
+					<l:content>
+						<OverflowToolbar width="100%">
+							<ToolbarSpacer/>
+							<Title text="Recommended Content" level="H3"/>
+							<ToolbarSpacer/>
+						</OverflowToolbar>
+						<List
+							showSeparators="None"
+							mode="None"
+							items="{
+								path: 'recommend>/openSAP'
+							}">
+							<items>
+								<CustomListItem>
+									<HBox alignItems="Center" 
+										justifyContent="SpaceBetween">
+										<SlideTile class="sapUiTinyMarginBegin sapUiTinyMarginTop">
+											<GenericTile
+												backgroundImage="{recommend>Image}"
+												frameType="TwoByOne" press="pressRecommendedItem">
+												<TileContent footer="{
+														path: 'recommend>Description',
+														formatter: '.formatter.html2Text'
+													}">
+													<NewsContent
+														contentText="{recommend>Title}"
+														subheader="{recommend>StartDate}"/>
+												</TileContent>
+											</GenericTile>
+										</SlideTile>
+										<ObjectStatus
+											class="sapUiSmallMarginEnd"
+											text="Score: {recommend>Score}"
+											state="Information"/>
+									</HBox>
+								</CustomListItem>
+							</items>
+						</List>
+					</l:content>
+				</l:VerticalLayout>
+			</l:Splitter>
+		</l:flexContent>
+	</l:FixFlex>
+</mvc:View>
