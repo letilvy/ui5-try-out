@@ -1,0 +1,91 @@
+{
+    "services": {
+        "LaunchPage": {
+            "adapter": {
+                "config": {
+                    "catalogs": [
+                        {
+                            "id": "app_catalog",
+                            "title": "Applications",
+                            "tiles": [
+                                {
+                                    "id": "recommendationParam",
+                                    "title": "Recommendation",
+                                    "size": "1x1",
+                                    "tileType": "sap.ushell.ui.tile.StaticTile",
+                                    "properties": {
+                                        "chipId": "catalogTile_01",
+                                        "title": "Recommendation",
+                                        "subtitle": "KBA, Course, Success Story, SAP Community",
+                                        "info": "algorithm validation",
+                                        "icon": "sap-icon://flight",
+                                        "targetURL": "#Action-recommendationParam"
+                                    }
+                                }
+                            ]
+                        }
+                    ],
+                    "groups": [
+                        {
+                            "id": "app_group",
+                            "title": "Applications",
+                            "isPreset": true,
+                            "isVisible": true,
+                            "isGroupLocked": false,
+                            "tiles": [
+                                {
+                                    "id": "recommendationParam",
+                                    "title": "Recommendation",
+                                    "size": "1x1",
+                                    "tileType": "sap.ushell.ui.tile.StaticTile",
+                                    "properties": {
+                                        "chipId": "catalogTile_01",
+                                        "title": "Recommendation",
+                                        "subtitle": "KBA, Course, Success Story...",
+                                        "info": "algorithm validation",
+                                        "icon": "sap-icon://flight",
+                                        "targetURL": "#Action-recommendationParam"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        },
+        "NavTargetResolution": {
+            "config": {
+                "enableClientSideTargetResolution": true
+            }
+        },
+        "ClientSideTargetResolution": {
+            "adapter": {
+                "config": {
+                    "inbounds": {
+                        "actionToappnavsampleParam": {
+                            "semanticObject": "Action",
+                            "action": "recommendationParam",
+                            "title": "Recommendation: Algorithm Validation Platform",
+                            "signature": {
+                                "parameters": {
+                                    "fixed-param1": {
+                                        "defaultValue": {
+                                            "format": "value",
+                                            "value": "value1"
+                                        }
+                                   }
+                                },
+                                "additionalParameters": "allowed"
+                            },
+                            "resolutionResult": {
+                                "applicationType": "SAPUI5",
+                                "additionalInformation": "SAPUI5.Component=sap.ushell.demo.AppNavSample",
+                                "url": "test-resources/sap/ushell/demoapps/AppNavSample?array-param1=value1&array-param1=value2"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
