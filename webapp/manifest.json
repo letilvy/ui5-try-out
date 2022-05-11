@@ -109,11 +109,6 @@
 					"pattern": "",
 					"name": "recommend",
 					"target": ["recommend"]
-				},
-				{
-					"pattern": "Objects/{objectId}",
-					"name": "object",
-					"target": ["object"]
 				}
 			],
 
@@ -123,16 +118,6 @@
 					"id": "recommend",
 					"level": 1,
 					"title": "{i18n>recommendViewTitle}"
-				},
-				"object": {
-					"name": "Object",
-					"id": "object",
-					"level": 2,
-					"title": "{i18n>objectViewTitle}"
-				},
-				"objectNotFound": {
-					"name": "ObjectNotFound",
-					"id": "objectNotFound"
 				},
 				"notFound": {
 					"name": "NotFound",
